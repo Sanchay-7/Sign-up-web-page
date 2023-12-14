@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css"/>
+    <title>Login page</title>
+</head>
+<body>
+    <form>
+    <h1>Sign Up</h1>
+    <fieldset>
+        <label for="username">Username (Required)<input id="username" type="text" placeholder="Enter any Username" required /></label>
+        <label for="password">Password (Required)<input id="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="Firstname">Firstname<input id="Firstname" type="text" placeholder="Enter your first name" required/></label>
+        <label for="Lastname">Lastname<input id="Lastname" type="text" placeholder="Enter your Last name"/></label>
+        <label for="email">Email (Required)<input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="age">Age (optional)<input id="age" type="number" min="16" max="120" /></label>
+        <label for="Gender">Gender
+            <select id="Gender">
+                <option value="">Select any one</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">I prefer not to say</option>
+            </select>
+        </label>
+    </fieldset>
+    <div><input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the terms-and-conditions</div>
+        <input type="submit" value="Sign up" id="submit"/>
+    </form>
+</body>
+</html>
